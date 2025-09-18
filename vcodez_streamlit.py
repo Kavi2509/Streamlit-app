@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1I1YU0J9QRgyRxVfhfZJld92ZXaTuAgH-
 """
 
-!pip install streamlit
+pip install streamlit
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile streamlitapp.py
@@ -27,7 +27,7 @@ Original file is located at
 # 
 # # Text Input
 # name = st.text_input("Enter your name:", "Type here...")
-# st.write(f"👋 Hello, {name}!")
+# st.write(f"👋 Hello, {Kaviya}!")
 # 
 # # Number Input
 # age = st.number_input("Enter your age:", min_value=0, max_value=120, value=25)
