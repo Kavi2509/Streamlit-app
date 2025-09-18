@@ -1,22 +1,20 @@
-# -*- coding: utf-8 -*-
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Set Page Configuration
-st.set_page_config(page_title="Streamlit Practice App", page_icon="📝", layout="centered")
+st.set_page_config(page_title="Welcome Kaviya!", page_icon="", layout="centered")
 
 # Title & Header
-st.title("📝 Streamlit Practice App")
-st.header("Welcome to Your First Streamlit App")
+st.title("Welcome Kaviya!")
+st.header("Hey! This is your first Streamlit App")
 st.subheader("Let's Explore Streamlit Features")
 st.write("This app demonstrates various Streamlit components for user inputs, outputs, charts, and file handling.")
 
 # Text Input
 name = st.text_input("Enter your name:", "Type here...")
-if name and name != "Type here...":
-    st.write(f"👋 Hello, {name}!")
+st.write(f"👋 Hello, {name}!")
 
 # Number Input
 age = st.number_input("Enter your age:", min_value=0, max_value=120, value=25)
@@ -73,11 +71,11 @@ st.markdown("""
 """)
 
 # Session State Example
-if "count" not in st.session_state:
-    st.session_state["count"] = 0
+if 'count' not in st.session_state:
+    st.session_state['count'] = 0
 
 if st.button("Increase Counter"):
-    st.session_state["count"] += 1
+    st.session_state['count'] += 1
 
 st.write(f"🔢 Counter Value: {st.session_state['count']}")
 
